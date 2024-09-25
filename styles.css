@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ff0000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+.game-section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.game-section h2 {
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mods-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.mod {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.mod h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.mod p {
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #cc0000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #fff;
+}
+search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #searchInput {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: black;
+            color: red;
+            border: 2px solid red;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #searchInput::placeholder {
+            color: #ff6666; /* Светло-красный для плейсхолдера */
+        }
+
+        #searchInput:focus {
+            border-color: #ff0000; /* Ярко-красная рамка при фокусе */
+}

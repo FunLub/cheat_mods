@@ -1,0 +1,108 @@
+!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моды для CS, Rust и Minecraft</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function searchMods() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let mods = document.querySelectorAll('.mod');
+            mods.forEach(mod => {
+                let title = mod.querySelector('h3').innerText.toLowerCase();
+                if (title.includes(input)) {
+                    mod.style.display = '';
+                } else {
+                    mod.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Моды для CS, Rust и Minecraft</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#cs">CS:GO</a></li>
+                <li><a href="#rust">Rust</a></li>
+                <li><a href="#minecraft">Minecraft</a></li>
+                <li><a href="#lorestrice">LoreStrice</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Поиск модов..." onkeyup="searchMods()">
+    </div>
+
+    <section id="cs" class="game-section">
+        <h2>Моды для CS:GO</h2>
+        <div class="mods-list">
+            <div class="mod">
+                <h3>чит 1 для CS:GO</h3>
+                <p>нет в продаже</p>
+                <a href="#" class="btn">Скачать</a>
+            </div>
+            <div class="mod">
+                <h3>чит 2 для CS:GO</h3>
+                <p>нет в продаже</p>
+                <a href="#" class="btn">Скачать</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="rust" class="game-section">
+        <h2>Моды для Rust</h2>
+        <div class="mods-list">
+            <div class="mod">
+                <h3>чит 1 для Rust</h3>
+                <p>нет в продаже</p>
+                <a href="#" class="btn">Скачать</a>
+            </div>
+            <div class="mod">
+                <h3>чит 2 для Rust</h3>
+                <p>нет в продаже</p>
+                <a href="#" class="btn">Скачать</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="minecraft" class="game-section">
+        <h2>Моды для Minecraft</h2>
+        <div class="mods-list">
+            <div class="mod">
+                <h3>чит 1 для Minecraft</h3>
+                <p>нет в продаже</p>
+                <a href="#" class="btn">Скачать</a>
+            </div>
+            <div class="mod">
+                <h3>чит 2 для Minecraft</h3>
+                <p>нет в продаже</p>
+                <a href="#" class="btn">Скачать</a>
+            </div>
+        </div>
+    </section>
+    <section id="lorestrice" class="game-section">
+        <h2>игра LoreStrice</h2>
+        <div class="mods-list">
+            <div class="mod">
+                <h3>игра LoreStrice</h3>
+                <p>игра LoreStrice мультиплеерная стрелялка на пистолетах модели пм</p>
+                <a href="dowland/LoreStrice.exe" class="btn">Скачать</a>
+            </div>
+            <div class="mod">
+                <h3>игра LoreStrice</h3>
+                <p>игра LoreStrice мультиплеерная стрелялка на пистолетах модели пм</p>
+                <a href="dowland/LoreStrice.exe" class="btn">Скачать</a>
+            </div>
+        </div>
+
+    <footer>
+        <p>&copy; 2024 Моды для CS, Rust и Minecraft</p>
+    </footer>
+</body>
+</html>
